@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #fbbfbf ;
+    color: black;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    
+}
+.nav-links li {
+    margin: 0 15px;
+    text-decoration: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.logo {
+    font-size: 35px;
+    color: black;
+    font-weight: bolder;
+}
+.logo span{
+    color: red;
+}
+.hero {
+    background: url('https://img.freepik.com/free-photo/pile-books-bookstore_23-2148213789.jpg?t=st=1741233709~exp=1741237309~hmac=3fec739caf33103f35bcab7fa333d6162a3a848fd69044db2e3a835085340bc1&w=1380') no-repeat center/cover ;
+    color: black;
+    padding: 100px 20px;
+    height: 400px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1{
+    font-size: 30px;
+}
+.hero p{
+    font-size: 17px;
+}
+.hero a{
+    background-color:pink;
+    height: 20px;
+    width:100px;
+    text-decoration: none;
+    border: none;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+.hero a {
+    background-color: rgb(231, 154, 154);
+    color: rgb(9, 9, 9);
+    font-weight: bold;
+    justify-content: center;
+    
+}
+
+.products {
+    display: flex;
+    justify-content:center; 
+    gap: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+.product {
+    max-width: 300px;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.product img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.product p {
+    font-size: 1rem;
+    color: #454444;
+    margin-top: 10px;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.testimonial-box {
+    background: rgb(218, 215, 215);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+.testimonial-box p {
+    font-style: italic;
+    
+}
+.testimonial-box h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+footer {
+    background: #fbbfbf;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(247, 238, 238, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #0b0b0b;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+
+}
+
+/* sidenav for mobile devices*/
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+.side-nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.side-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
